@@ -5,7 +5,7 @@ defmodule ExFirebaseAuth.MixProject do
     [
       app: :ex_firebase_auth,
       version: "0.5.1",
-      elixir: "~> 1.10",
+      elixir: "~> 1.16.2",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package(),
@@ -29,9 +29,9 @@ defmodule ExFirebaseAuth.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:jose, "~> 1.10"},
-      {:finch, "~> 0.13.0"},
-      {:jason, "~> 1.4.0"},
+      {:jose, "~> 1.11"},
+      {:finch, "~> 0.18.0"},
+      {:jason, "~> 1.4"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
